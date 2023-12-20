@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="app">
-        <ul>
+        <ul v-if="emails.length < 10 ? false : true">
             <li v-for="(email, index) in emails">
                 {{ email }}
             </li>
