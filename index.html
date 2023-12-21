@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="app">
+        <!-- (Class correction) Or v-if="emails.length == 10"  -->
         <ul v-if="emails.length < 10 ? false : true">
             <li v-for="(email, index) in emails">
                 {{ email }}
